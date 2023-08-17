@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -85,7 +89,7 @@
         </div>
       </section>
 
-      <div class="info">
+      <section class="info">
         <div class="container">
           <div class="info-top">
             <div class="info-top__left">
@@ -118,7 +122,9 @@
                 Оконный завод «Лабрадор» - победитель премии «Золотое окно 2017»
                 в номинации "Лучшая оконная компания в северо-западном регионе".
               </p>
-              <a class="info-bottom__item-text2-link" href="#">Подробнее</a>
+              <a class="btn-link info-bottom__item-text2-link" href="#"
+                >Подробнее</a
+              >
             </div>
             <div class="info-bottom__item">
               <img
@@ -129,9 +135,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="video">
+      <section class="video">
         <div class="container">
           <div class="video__inner">
             <button class="video__inner-block">
@@ -139,27 +145,213 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="news">
+      <section class="news">
         <div class="container">
           <h3 class="title-block news-title">Новости</h3>
           <div class="news-inner">
             <div class="news-inner__item">
               <p class="news-inner__item-date">25 января, 2023</p>
-              <p class="news-inner__item-text">Скидка 16% на крышу для Вашего балкона и усиление парапета</p>
+              <p class="news-inner__item-text-top">
+                Скидка 16% на крышу для Вашего балкона и усиление парапета
+              </p>
+              <p class="news-inner__item-text-mini">
+                Балкон без крыши? Не беда!Балкон без крыши? Не беда!
+              </p>
+              <a class="btn-link news-link-1" href="#">Подробнее</a>
             </div>
+
+            <div class="news-inner__item">
+              <div class="news-inner__item-block">
+                <p class="news-inner__item-date news-inner__item-date-active">
+                  25 января, 2023
+                </p>
+                <p
+                  class="news-inner__item-text-top news-inner__item-text-top-active"
+                >
+                  Цены ниже чем в 2021 году!
+                </p>
+                <p class="news-inner__item-text news-inner__item-text-active">
+                  Все вокруг повышают цены и вгоняют в тоску? Скоро осень — а мы
+                  хотим сохранить хорошее настроение нашим заказчикам! Поэтому
+                  мы снизили цены! Теперь цены ниже чем в 2021 году!
+                </p>
+                <a class="btn-link news-link-2" href="#">Подробнее</a>
+              </div>
+              <img
+                class="news-inner__item-img"
+                src="assets/news/cat.png"
+                alt="img"
+              />
+            </div>
+
             <div class="news-inner__item">
               <p class="news-inner__item-date">25 января, 2023</p>
-              <p class="news-inner__item-text">Скидка 16% на крышу для Вашего балкона и усиление парапета</p>
-            </div>
-            <div class="news-inner__item">
-              <p class="news-inner__item-date">25 января, 2023</p>
-              <p class="news-inner__item-text">Скидка 16% на крышу для Вашего балкона и усиление парапета</p>
+              <p class="news-inner__item-text-top">
+                Бесшовные окна нового поколения с фильтрацией воздуха для вашего
+                здоровья и безопасности
+              </p>
+              <p class="news-inner__item-text-mini">
+                Спасаясь от уличного воздуха сСпасаясь от уличного воздуха с
+              </p>
+              <a class="btn-link news-link-3" href="#">Подробнее</a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="window">
+        <div class="container">
+          <div class="window-inner">
+            <div class="window-inner__left">
+              <h3 class="title-block window-inner__left-title">
+                БЕСШОВНЫЕ ОКНА НОВОго ПОКОЛЕНИя
+              </h3>
+              <p class="window-inner__left-text">
+                Кроме стандартных белых окон завод Лабрадор производит и цветные
+                (окрашенные и ламинированные под дерево) БЕСШОВНЫЕ ОКНА. По
+                старой технологии (других производителей) отфрезерованные углы
+                рамы и створки окна замазываются цветным маркером. Получается,
+                что все углы ламинированных окон других производителей
+                подкрашены краской, которая очень бросается в глаза и портит
+                внешний вид оконных конструкций. Причем некрасивые «замазанные»
+                швы видны с большого расстояния и с внешней и с внутренней
+                стороны окна.
+              </p>
+              <a class="btn-link window-inner__left-btn" href="#">Подробнее</a>
+            </div>
+            <div class="window-inner__right">
+              <img
+                class="window-inner__right-img"
+                src="assets/window/window.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="swiper swiper-reviews">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment">
+                    Выражаю глубокую благодарность монтировщику окон Владимиру
+                    Майстренко! 12 часов тяжелой работы по установки 2-х окон в
+                    старом фонде. Профессионал! Аккуратно и упорно почти без
+                    перерывов. Уважительное отношение к заказчику. Достоин
+                    всяческого поощрения. Пример для подражания, ибо такие люди
+                    -лицо и имя вашей компании. Спасибо ещё раз.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment"></p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment">
+                    Выражаю глубокую благодарность монтировщику окон Владимиру
+                    Майстренко! 12 часов тяжелой работы по установки 2-х окон в
+                    старом фонде. Профессионал! Аккуратно и упорно почти без
+                    перерывов. Уважительное отношение к заказчику. Достоин
+                    всяческого поощрения. Пример для подражания, ибо такие люди
+                    -лицо и имя вашей компании. Спасибо ещё раз.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment">
+                    Выражаю глубокую благодарность монтировщику окон Владимиру
+                    Майстренко! 12 часов тяжелой работы по установки 2-х окон в
+                    старом фонде. Профессионал! Аккуратно и упорно почти без
+                    перерывов. Уважительное отношение к заказчику. Достоин
+                    всяческого поощрения. Пример для подражания, ибо такие люди
+                    -лицо и имя вашей компании. Спасибо ещё раз.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment">
+                    Выражаю глубокую благодарность монтировщику окон Владимиру
+                    Майстренко! 12 часов тяжелой работы по установки 2-х окон в
+                    старом фонде. Профессионал! Аккуратно и упорно почти без
+                    перерывов. Уважительное отношение к заказчику. Достоин
+                    всяческого поощрения. Пример для подражания, ибо такие люди
+                    -лицо и имя вашей компании. Спасибо ещё раз.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide__reviews">
+                <img
+                  class="reviews-profile__img"
+                  src="assets/reviews/profile.png"
+                  alt="profile"
+                />
+                <div class="swiper-slide__reviews-block">
+                  <p class="reviews-profile__name">Арзуманян Руслан</p>
+                  <p class="reviews-profile__date">23 мая 2022 г.</p>
+                  <p class="reviews-profile__comment">
+                    Выражаю глубокую благодарность монтировщику окон Владимиру
+                    Майстренко! 12 часов тяжелой работы по установки 2-х окон в
+                    старом фонде. Профессионал! Аккуратно и упорно почти без
+                    перерывов. Уважительное отношение к заказчику. Достоин
+                    всяческого поощрения. Пример для подражания, ибо такие люди
+                    -лицо и имя вашей компании. Спасибо ещё раз.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
