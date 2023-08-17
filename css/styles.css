@@ -1,0 +1,230 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Sofia Sans', sans-serif; */
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header start */
+.header {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 85px;
+}
+
+.header__inner {
+  padding: 35px 0 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-left__logo-link {
+  margin-right: 32px;
+}
+.header-left__logo-img {
+  max-width: 32px;
+}
+
+.header-left__burger {
+  margin-right: 19px;
+}
+
+.header-left__burger-img {
+  max-width: 32px;
+}
+
+.header-left__search {
+  margin-right: 73px;
+  cursor: pointer;
+}
+.header-left__search-word {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.header-left__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.header-left__nav-link,
+.header-right__link {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Header end */
+
+/* Banner top */
+.banner {
+  background-color: #000;
+  padding-bottom: 126px;
+}
+.banner-top {
+  background: url("../assets/baner/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 297px;
+}
+
+.banner-top__title {
+  color: #fff;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 93.5%; /* 59.84px */
+  text-transform: uppercase;
+  max-width: 700px;
+}
+
+.banner-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.banner-bottom__text-left {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 336px;
+  margin-right: 20px;
+}
+.banner-bottom__text-right {
+  color: #fff;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 93.5%; /* 59.84px */
+  text-transform: uppercase;
+  max-width: 970px;
+}
+/* Banner end */
+
+/* Info start */
+.info {
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+.info-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 27px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.info-top__left {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 20px;
+  margin-right: 20px;
+}
+
+.info-top__left-text {
+  color: #000;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 194px;
+}
+
+.info-top__right {
+  max-width: 335px;
+}
+
+.info-top__right-text {
+  color: #101010;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 335px;
+  margin-bottom: 25px;
+}
+
+.info-top__right-link {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #2a8f46;
+  border-radius: 50%;
+  position: relative;
+}
+
+.info-top__right-link span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 118px;
+  color: #000;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  padding-top: 60px;
+}
+.info-bottom__item:nth-child(1) {
+  max-width: 336px;
+}
+
+.info-bottom__item-text1 {
+  color: #000;
+  font-family: Sofia Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-bottom__item:nth-child(2) {
+  max-width: 332px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-bottom__item-text2 {
+  color: #101010;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.info-bottom__item-text2-link {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1.5px solid #2a8f46;
+  width: 119px;
+  padding: 2px 10px;
+}
+
+/* Info end */
