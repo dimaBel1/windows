@@ -423,6 +423,7 @@ font-family: 'Sofia Sans', sans-serif; */
 
 .reviews-profile__img {
   max-width: 335px;
+  max-height: 299px;
 }
 
 .reviews-profile__name {
@@ -534,6 +535,9 @@ font-family: 'Sofia Sans', sans-serif; */
 /* Rewiews end */
 
 /* Order start */
+.order {
+  padding-bottom: 166px;
+}
 .order-title {
   margin-bottom: 20px;
 }
@@ -624,7 +628,124 @@ font-family: 'Sofia Sans', sans-serif; */
 
 .form-order__btn {
   margin-bottom: auto;
-  border: 1.5px solid #2A8F46;
+  border: 1.5px solid #2a8f46;
 }
 
 /* Order end*/
+
+/* Footer start */
+.footer {
+  background: #1f1f1f;
+  padding: 76px 0 94px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner__left,
+.footer-inner__right {
+  flex: 1 1 50%;
+}
+
+.footer-inner__left-logo {
+  max-width: 56px;
+  margin-left: 52px;
+  margin-bottom: 18px;
+}
+
+.footer-inner__left-text1 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer-inner__left-text2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.footer-inner__left-text3 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer-inner__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 121px;
+  grid-row-gap: 85px;
+}
+
+.footer-inner__right-block {
+  max-width: 234px;
+}
+
+.footer-inner__right-block-title {
+  color: #fff;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255, 0.5);
+  margin-bottom: 28px;
+}
+
+.footer-inner__right-block-item {
+  margin-bottom: 10px;
+}
+
+.footer-inner__right-block-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-inner__right-block-link {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+  transition: opacity .2s ease-in;
+}
+.footer-inner__right-block-link:hover {
+  opacity: 1;
+}
+
+.footer-connection,
+.footer-desc {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.footer-inner__right-block3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-connection {
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: opacity .2s ease-in;
+}
+.footer-connection:hover {
+  opacity: 1;
+}
+
+.footer-connection:last-child {
+  margin-bottom: 0;
+}
+.footer-desc {
+  margin-top: 30px;
+}
+
+/* Footer end */
