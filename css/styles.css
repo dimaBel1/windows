@@ -426,14 +426,21 @@ font-family: 'Sofia Sans', sans-serif; */
   overflow: hidden;
 }
 
+.accordion-title__block {
+  padding: 100px 50px 72px 50px
+}
+
+.ofice-title {
+  color: #fff;
+}
+
 .accordeon-header {
   background: #1f1f1f;
   padding: 40px 50px;
   cursor: pointer;
   user-select: none;
   display: flex;
-  gap: 0 420px;
-
+  justify-content: space-between;
 }
 
 .accordeon-header:hover {
@@ -450,7 +457,14 @@ font-family: 'Sofia Sans', sans-serif; */
 
 .accordeon-header__wrap {
   display: flex;
-  gap: 0 216px;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.accordion-block__img-text {
+  display: flex;
+  justify-content: space-between;
+  width: 352px;
 }
 
 .ofice__street {
@@ -459,6 +473,7 @@ font-family: 'Sofia Sans', sans-serif; */
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .ofice__time {
@@ -468,6 +483,28 @@ font-family: 'Sofia Sans', sans-serif; */
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.75;
+}
+
+.accordeon-section {
+  position: relative;
+}
+.accordeon-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 54px;
+  width: 1400px;
+  height: 0.5px;
+  background: rgba(255, 255, 255, .3);
+}
+.accordeon-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 54px;
+  width: 1400px;
+  height: 0.5px;
+  background: rgba(255, 255, 255, .3);
 }
 
 .accordeon-body {
@@ -485,8 +522,15 @@ font-family: 'Sofia Sans', sans-serif; */
 .accordeon-body p {
   display: flex;
   flex-direction: column;
-  max-width: 340px;
+  max-width: 372px;
   margin-left: auto;
+}
+
+.accordeon-body p span {
+  margin-bottom: 11px;
+}
+.accordeon-body p span img {
+  margin-right: 14px;
 }
 .ofice-link {
   color: #fff;
@@ -494,6 +538,24 @@ font-family: 'Sofia Sans', sans-serif; */
   font-size: 16px;
   font-weight: 400;
   opacity: 0.75;
+}
+
+.accordion-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 35px;
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in;
+}
+
+.ofice-block__link-btn {
+  padding: 42px 58px 100px 58px;
+  text-align: right;
+}
+
+.ofice__link-btn {
+  color: #fff;
+  border: 1.5px solid #cfcfcf;
 }
 
 /* ofice end */

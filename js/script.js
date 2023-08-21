@@ -4,12 +4,18 @@ function initAccordeon() {
   ).clientHeight;
   document.querySelector(".accordeon-section .accordeon-body").style.maxHeight =
     firstSectionBodyHeight + "px";
+
+    document.querySelectorAll('.accordion-arrow')[0].style.transform = "rotate(0deg)";
 }
 initAccordeon();
 
 const accordeonHeaderClickHandler = (e) => {
   document.querySelectorAll(".accordeon-section").forEach(function (section) {
     section.querySelector(".accordeon-body").style.maxHeight = "0px";
+
+    section.querySelectorAll(".accordion-arrow").forEach((itemImg) => {
+      itemImg.style.transform = "rotate(180deg)";
+    });
   });
 
   const accordeonSection = e.target.closest(".accordeon-section");
@@ -20,6 +26,9 @@ const accordeonHeaderClickHandler = (e) => {
 
   accordeonSection.querySelector(".accordeon-body").style.maxHeight =
     insideElHeight + "px";
+
+  accordeonSection.querySelector(".accordion-arrow").style.transform =
+    "rotate(0deg)";
 };
 
 document.querySelectorAll(".accordeon-section").forEach(function (section) {
